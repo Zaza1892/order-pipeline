@@ -5,6 +5,6 @@ create table order_lookups (
     customer_id int not null,
     adress text ,
     products JSONB,
-    event_timestamp TIMESTAMPZ,
+    event_timestamp TIMESTAMPTZ,
     raw_payload JSONB
 )

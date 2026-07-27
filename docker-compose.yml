@@ -30,7 +30,7 @@ services:
    mock-api:
     build:
       context: .
-      dockerfile: Dockerfile.mockapi
+      dockerfile: dockerfile.mockapi
     ports:
       - "8000:8000"
     healthcheck:
@@ -43,7 +43,7 @@ services:
    consumer:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: dockerfile
     depends_on:
       rabbitmq:
         condition: service_healthy
